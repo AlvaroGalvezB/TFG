@@ -1,0 +1,16 @@
+/* PALETA COLORES #e40404, #fc7c7c, #820202, #960202 */
+/* COLOR PRINCIPAL #e80404 */
+h1, h2, h3, h4 {
+    color: #800000; 
+    font-family: 'Helvetica Neue', 'Open Sans', sans-serif;
+}
+
+p {
+    color: #68360c; 
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    background-image: url(assets/image/F1-Bandera_a_cuadros.png) !important;
+    background-size: contain;
+}
