@@ -1,0 +1,55 @@
+/* PALETA COLORES (claro-oscuros) #CB0404, #AE0303, #910303, #730202, #560202, #390101 */
+/* COLOR PRINCIPAL #e80404 */
+
+.navbar{
+    background-color: #e80404;
+}
+
+.banderas{
+ margin-top: 10px;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.85)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    
+}
+
+.navbar-toggler{
+    background-color: #e40404;
+    border-color: #e80404;
+    color: #e80404;
+}
+
+
+#opciones .navbar-nav li {
+    margin-right: 100px;
+}
+
+#opciones .navbar-nav li a {
+    background-color: #CB0404; 
+    color: #FFF;
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    display: inline-block;
+}
+
+#opciones .navbar-nav li a:hover {
+    background-color:  #730202;
+
+}
+
+#opciones .navbar-nav li a:active { 
+    font-size: 1.2em; 
+}
+
+#opciones .navbar-nav li.active a {
+    background-color: #390101; 
+    color: #fff;
+    font-weight: bold; 
+    font-size: 1.2em;
+  }
+  
+
+.container-fluid{
+    padding: 0px;
+}
