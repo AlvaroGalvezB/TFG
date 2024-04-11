@@ -3,6 +3,7 @@ import { InicioComponent } from './views/inicio/inicio.component';
 import { EstanciaComponent } from './views/estancia/estancia.component';
 import { InscripcionComponent } from './views/inscripcion/inscripcion.component';
 import { SobreNosotrosComponent } from './views/sobre-nosotros/sobre-nosotros.component';
+import { PoliticsComponent } from './components/politics/politics.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'inicio', pathMatch: 'full' },
@@ -10,5 +11,6 @@ export const routes: Routes = [
     { path: 'estancia', component: EstanciaComponent },
     { path: 'inscripcion', component: InscripcionComponent },
     { path: 'sobre-nosotros', component: SobreNosotrosComponent },
+    { path: 'politics', component: PoliticsComponent },
    
 ];
