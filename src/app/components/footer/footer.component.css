@@ -1,14 +1,14 @@
 
 /* Estilos del Footer */
 footer{
-    background-color: #68360c;
+    background-color: #e80404;
     padding: 40px;
     color: white;
 }
 
 
 .custom-bg-color {
-    background-color: #68360c; 
+    background-color: #e80404; 
 }
 
 .sobre-nosotros{
@@ -16,5 +16,10 @@ footer{
 }
 
 p{
+    color: white;
+}
+
+a{
+    text-decoration: none;
     color: white;
 }
