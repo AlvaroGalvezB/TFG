@@ -1,16 +1,16 @@
 import { Routes } from '@angular/router';
 import { InicioComponent } from './views/inicio/inicio.component';
-import { EstanciaComponent } from './views/estancia/estancia.component';
-import { InscripcionComponent } from './views/inscripcion/inscripcion.component';
-import { SobreNosotrosComponent } from './views/sobre-nosotros/sobre-nosotros.component';
 import { PoliticsComponent } from './components/politics/politics.component';
+import { ConductoresComponent } from './views/conductores/conductores.component';
+import { CircuitosComponent } from './views/circuitos/circuitos.component';
+import { EquiposComponent } from './views/equipos/equipos.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'inicio', pathMatch: 'full' },
     { path: 'inicio', component: InicioComponent },
-    { path: 'estancia', component: EstanciaComponent },
-    { path: 'inscripcion', component: InscripcionComponent },
-    { path: 'sobre-nosotros', component: SobreNosotrosComponent },
+    { path: 'conductores', component: ConductoresComponent },
+    { path: 'circuitos', component: CircuitosComponent },
+    { path: 'equipos', component: EquiposComponent },
     { path: 'politics', component: PoliticsComponent },
    
 ];
