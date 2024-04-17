@@ -1,4 +1,4 @@
-
+/* 
   .card-body{
     background-color: #68360c;
 }
@@ -32,20 +32,20 @@
 
 #card1, #card2, #card3 {
   border-color: #68360c;
-  border-width: 2px; /* Puedes ajustar el ancho del borde según tus necesidades */
-  border-style: solid; /* Asegura que el borde sea de tipo sólido */
-}
-
+  border-width: 2px; 
+   border-style: solid;  
+ }
+ 
 .btn{
   background-color: #cc8d5a;
   border-color: #ffffff;
-  border-width: 2px; /* Puedes ajustar el ancho del borde según tus necesidades */
-  border-style: solid; /* Asegura que el borde sea de tipo sólido */
+  border-width: 2px; 
+  border-style: solid; 
 }
 
 .btn:hover{
   background-color: #68360c;
   border-color: #ffffff;
-  border-width: 2px; /* Puedes ajustar el ancho del borde según tus necesidades */
-  border-style: solid; /* Asegura que el borde sea de tipo sólido */
-}
+  border-width: 2px; 
+  border-style: solid; 
+} */

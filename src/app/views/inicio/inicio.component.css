@@ -40,20 +40,20 @@ section{
 
 #card1, #card2, #card3 {
   border-color: #BB4348;
-  border-width: 2px; /* Puedes ajustar el ancho del borde según tus necesidades */
-  border-style: solid; /* Asegura que el borde sea de tipo sólido */
+  border-width: 2px; 
+  border-style: solid;
 }
 
 .btn{
   background-color: #D22426;
   border-color: #ffffff;
-  border-width: 2px; /* Puedes ajustar el ancho del borde según tus necesidades */
-  border-style: solid; /* Asegura que el borde sea de tipo sólido */
+  border-width: 2px; 
+  border-style: solid;
 }
 
 .btn:hover{
   background-color: #390101;
   border-color: #ffffff;
-  border-width: 2px; /* Puedes ajustar el ancho del borde según tus necesidades */
-  border-style: solid; /* Asegura que el borde sea de tipo sólido */
+  border-width: 2px; 
+  border-style: solid;
 }
