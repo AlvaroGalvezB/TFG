@@ -7,10 +7,8 @@ section{
 
 /* #4D2726
 #800200 */
-
-
 .card-body{
-    background-color: #68360c;
+    background-color: #CB0404;
 }
 
 .card-title {
@@ -37,24 +35,24 @@ section{
 
 .card:hover {
   transform: scale(1.05);
-  box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 30px #68360c;
+  box-shadow: 0 0 0 inset, 0 0 30px #BB4348;
 }
 
 #card1, #card2, #card3 {
-  border-color: #68360c;
+  border-color: #BB4348;
   border-width: 2px; /* Puedes ajustar el ancho del borde según tus necesidades */
   border-style: solid; /* Asegura que el borde sea de tipo sólido */
 }
 
 .btn{
-  background-color: #cc8d5a;
+  background-color: #D22426;
   border-color: #ffffff;
   border-width: 2px; /* Puedes ajustar el ancho del borde según tus necesidades */
   border-style: solid; /* Asegura que el borde sea de tipo sólido */
 }
 
 .btn:hover{
-  background-color: #68360c;
+  background-color: #390101;
   border-color: #ffffff;
   border-width: 2px; /* Puedes ajustar el ancho del borde según tus necesidades */
   border-style: solid; /* Asegura que el borde sea de tipo sólido */
