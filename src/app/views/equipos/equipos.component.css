@@ -1,0 +1,88 @@
+@font-face {
+    font-family: "Atpinko";
+    src: url("../../../assets/fonts/atpinko-regular.ttf");
+}
+
+@font-face {
+    font-family: "Atpinko_Bold";
+    src: url("../../../assets/fonts/atpinko-bold.ttf");
+}
+
+section {
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #cb0500;
+    box-shadow: 0 0 10px 5px rgb(203, 5, 0);
+}
+
+.card-body {
+    background-color: #CB0404;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin-bottom: 50px;
+}
+
+.card p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.card img {
+    background-color: #BB4348;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card {
+    border-radius: 25px;
+    overflow: hidden;
+    transition: transform 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    margin: 15px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 inset, 0 0 30px #BB4348;
+}
+
+#card1,
+#card2,
+#card3 {
+    border-color: #BB4348;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.logo {
+    background-color: transparent !important;
+    height: 50px !important;
+    width: 50px !important;
+    position: absolute !important;
+    top: auto !important;
+    margin-left: 10px;
+}
+
+.driver {
+    background-color: transparent !important;
+    height: 50px !important;
+    width: 50px !important;
+
+}
+
+.btn {
+    background-color: #D22426;
+    border-color: #ffffff;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.btn:hover {
+    background-color: #390101;
+    border-color: #ffffff;
+    border-width: 2px;
+    border-style: solid;
+}
