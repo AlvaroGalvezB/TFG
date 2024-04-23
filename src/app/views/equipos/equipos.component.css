@@ -66,6 +66,14 @@ section {
     margin-left: 10px;
 }
 
+.name {
+    background-color: transparent !important;
+    height: 50px !important;
+    position: absolute !important;
+    top: auto !important;
+    margin-left: 60px;
+}
+
 .driver {
     background-color: transparent !important;
     height: 50px !important;
