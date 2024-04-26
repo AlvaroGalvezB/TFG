@@ -8,6 +8,11 @@
     src: url("../../../assets/fonts/atpinko-bold.ttf");
 }
 
+@font-face {
+    font-family: "Lment";
+    src: url("../../../assets/fonts/Lment-v02.otf");
+}
+
 section {
     margin-top: 30px;
     background-color: white;
@@ -71,14 +76,16 @@ section {
     height: 50px !important;
     position: absolute !important;
     top: auto !important;
-    margin-left: 60px;
+    margin-left: 10px;
+    margin-top: 5px;
 }
 
-.driver {
+.bandera {
     background-color: transparent !important;
-    height: 50px !important;
-    width: 50px !important;
-
+    height: 35px !important;
+    width: 35px !important;
+    border-radius: 10px;
+    border: 2px solid white;
 }
 
 .btn {
