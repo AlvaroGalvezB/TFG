@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { JumbotronComponent } from '../../components/jumbotron/jumbotron.component';
 import { CardComponent } from '../../components/card/card.component';
-/* import { RequestService } from '../../services/request.service';
-import { DataNews } from '../../components/interfaces/news.interface'; */
+import { RequestService } from '../../services/request.service';
+import { DataNews } from '../../components/interfaces/news.interface';
 
 @Component({
   selector: 'app-inicio',
@@ -13,7 +13,7 @@ import { DataNews } from '../../components/interfaces/news.interface'; */
 })
 export class InicioComponent {
 
-/*   public constructor(public service: RequestService) {}
+public constructor(public service: RequestService) {}
 
   public newsArray:DataNews[] | undefined;
 
@@ -27,5 +27,5 @@ export class InicioComponent {
       this.newsArray = news;
       console.log(this.newsArray);
     })
-  } */
+  }
 }

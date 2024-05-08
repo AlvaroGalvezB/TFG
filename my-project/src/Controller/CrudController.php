@@ -14,6 +14,7 @@ use Doctrine\Persistence\ManagerRegistry;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorageInterface;
+use Symfony\Component\Security\Core\User\UserInterface;
 
 class CrudController extends AbstractController
 {
@@ -32,7 +33,6 @@ class CrudController extends AbstractController
     public function init(): Response
     {
         $token = $this->tokenStorage->getToken();
-
 
         if (null !== $token) {
             return $this->redirectToRoute('app_init');

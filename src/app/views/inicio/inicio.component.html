@@ -3,39 +3,12 @@
     <section>
         <h2 class="pt-3 text-center">NOTICIAS</h2>
         <div class="row">
-            <article class="col-xl-4 col-md-4 col-sm-4 mb-4">
-                    <div id="card1" class="card text-center bg-primary text-dark">
-                        <img src="" class="card-img-top" height="250" alt="Imagen Noticia1" />
-                        <div class="card-body">
-                            <h4 class="card-title text-white"></h4>
-                            <p class="card-text text-white"></p>
-                            <p class="card-text text-white collapse" id="" style="overflow: hidden"></p>
-                            <a href="" class="btn btn-dark" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="Noticia1">Ver Más</a>
-                        </div>
-                    </div>
+            @for (news of newsArray; track $index) {
+            <article class="col-xl-4 col-md-4 col-sm-12 mb-4">
+                <app-card [nameNew]="news.title" [description]="news.description" [id]="news.id"
+                    [date]="news.start_date.date" [image]="news.image"></app-card>
             </article>
-            <article class="col-xl-4 col-md-4 col-sm-4 mb-4">
-                <div id="card1" class="card text-center bg-primary text-dark">
-                    <img src="" class="card-img-top" height="250" alt="Imagen Noticia1" />
-                    <div class="card-body">
-                        <h4 class="card-title text-white"></h4>
-                        <p class="card-text text-white"></p>
-                        <p class="card-text text-white collapse" id="" style="overflow: hidden"></p>
-                        <a href="" class="btn btn-dark" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="Noticia1">Ver Más</a>
-                    </div>
-                </div>
-        </article>
-        <article class="col-xl-4 col-md-4 col-sm-4 mb-4">
-            <div id="card1" class="card text-center bg-primary text-dark">
-                <img src="" class="card-img-top" height="250" alt="Imagen Noticia1" />
-                <div class="card-body">
-                    <h4 class="card-title text-white"></h4>
-                    <p class="card-text text-white"></p>
-                    <p class="card-text text-white collapse" id="" style="overflow: hidden"></p>
-                    <a href="" class="btn btn-dark" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="Noticia1">Ver Más</a>
-                </div>
-            </div>
-    </article>
+            }
         </div>
     </section>
 </div>

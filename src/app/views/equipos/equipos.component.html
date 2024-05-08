@@ -2,30 +2,32 @@
     <section>
         <h2 class="pt-3 text-center">EQUIPOS</h2>
         <div class="row">
-            <article class="col-xl-6 col-lg-6 mb-4">
+            @for (team of teams; track $index) {
+                <article class="col-xl-6 col-lg-6 mb-4">
                     <div id="card1" class="card text-center bg-primary text-dark">
-                        <img src="../../../assets/image/CochesEquipo/Red_Bull.avif" class="card-img-top" alt="Coche" />
-                        <img src="../../../assets/image/LogoEquipos/redBull.avif" class="logo" alt="Logo"/><h4 class="name text-white mt-2" style="font-family: 'Atpinko', Arial, sans-serif;">Red Bull</h4>
+                        <img src="../../../assets/image/CochesEquipo/{{team.coche}}.avif" class="card-img-top" alt="Coche" />
+                        <img src="../../../assets/image/LogoEquipos/{{team.logo}}.avif" class="logo" alt="Logo"/><h4 class="name text-white mt-2" style="font-family: 'Atpinko', Arial, sans-serif;">{{team.nombreLogo}}</h4>
                         <div class="card-body">
-                            <h4 class="card-text text-white" style="font-family: 'Atpinko_Bold', Arial, sans-serif; float: left;">1</h4>
-                            <h4 class="card-text text-white" style="font-family: 'Atpinko_Bold', Arial, sans-serif; float: right; ">155 PTS</h4>
-                            <h4 class="card-text text-white" style="font-family: 'Atpinko', Arial, sans-serif; float: left;clear: both;"><img src="../../../assets/image/conductoresPequeños/S.P.avif" class="driver" alt="Sergio Perez"/>Perez</h4>
-                            <h4 class="card-text text-white" style="font-family: 'Atpinko', Arial, sans-serif; float: right;" >Verstappen<img src="../../../assets/image/conductoresPequeños/M.V.avif" class="driver" alt="Max Verstappen"/></h4>
+                            <h4 class="card-text text-white" style="font-family: 'Atpinko_Bold', Arial, sans-serif; float: left;">{{team.posicion}}</h4>
+                            <h4 class="card-text text-white" style="font-family: 'Atpinko_Bold', Arial, sans-serif; float: right; ">{{team.puntos}}</h4>
+                            <h4 class="card-text text-white" style="font-family: 'Atpinko', Arial, sans-serif; float: left;clear: both;"><img src="../../../assets/image/conductoresPequeños/{{team.piloto}}.avif" class="driver" alt="{{team.nombrePiloto}}"/>{{team.nombrePiloto}}</h4>
+                            <h4 class="card-text text-white" style="font-family: 'Atpinko', Arial, sans-serif; float: right;" >{{team.nombrePiloto1}}<img src="../../../assets/image/conductoresPequeños/{{team.piloto1}}.avif" class="driver" alt="{{team.nombrePiloto1}}"/></h4>
                         </div>
                     </div>
             </article>
-            <article class="col-xl-6 col-lg-6 mb-4">
-                <div id="card1" class="card text-center bg-primary text-dark">
-                    <img src="../../../assets/image/CochesEquipo/Ferrari.avif" class="card-img-top" alt="Coche" />
-                    <img src="../../../assets/image/LogoEquipos/Ferrari.avif" class="logo" alt="Logo"/><h4 class="name text-white mt-2" style="font-family: 'Atpinko', Arial, sans-serif;">Ferrari</h4>
-                    <div class="card-body">
-                        <h4 class="card-text text-white" style="font-family: 'Atpinko_Bold', Arial, sans-serif; float: left;">2</h4>
-                        <h4 class="card-text text-white" style="font-family: 'Atpinko_Bold', Arial, sans-serif; float: right; ">151 PTS</h4>
-                        <h4 class="card-text text-white" style="font-family: 'Atpinko', Arial, sans-serif; float: left;clear: both;"><img src="../../../assets/image/conductoresPequeños/C.L.avif" class="driver" alt="Charles Leclerc"/>Leclerc</h4>
-                        <h4 class="card-text text-white" style="font-family: 'Atpinko', Arial, sans-serif; float: right;">Sainz<img src="../../../assets/image/conductoresPequeños/C.S.avif" class="driver" alt="Carlos Sainz"/></h4>
+                }
+                <!-- <article class="col-xl-6 col-lg-6 mb-4">
+                    <div id="card1" class="card text-center bg-primary text-dark">
+                        <img src="../../../assets/image/CochesEquipo/Ferrari.avif" class="card-img-top" alt="Coche" />
+                        <img src="../../../assets/image/LogoEquipos/Ferrari.avif" class="logo" alt="Logo"/><h4 class="name text-white mt-2" style="font-family: 'Atpinko', Arial, sans-serif;">Ferrari</h4>
+                        <div class="card-body">
+                            <h4 class="card-text text-white" style="font-family: 'Atpinko_Bold', Arial, sans-serif; float: left;">2</h4>
+                            <h4 class="card-text text-white" style="font-family: 'Atpinko_Bold', Arial, sans-serif; float: right; ">151 PTS</h4>
+                            <h4 class="card-text text-white" style="font-family: 'Atpinko', Arial, sans-serif; float: left;clear: both;"><img src="../../../assets/image/conductoresPequeños/C.L.avif" class="driver" alt="Charles Leclerc"/>Leclerc</h4>
+                            <h4 class="card-text text-white" style="font-family: 'Atpinko', Arial, sans-serif; float: right;">Sainz<img src="../../../assets/image/conductoresPequeños/C.S.avif" class="driver" alt="Carlos Sainz"/></h4>
+                        </div>
                     </div>
-                </div>
-        </article>
+            </article>
         </div>
         <div class="row">
             <article class="col-xl-6 col-lg-6 mb-4">
@@ -129,7 +131,7 @@
                         <h4 class="card-text text-white" style="font-family: 'Atpinko', Arial, sans-serif; float: right;">Zhou<img src="../../../assets/image/conductoresPequeños/Z.G.avif" class="driver" alt="Zhou Guanyu"/></h4>
                     </div>
                 </div>
-        </article>
+        </article>-->
         </div>
     </section>
-</div>
+</div> 

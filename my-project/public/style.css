@@ -1,36 +1,36 @@
 body {
     margin: 10px !important;
-    color: #68360c !important;
 }
 
-button {
-    margin-top: 10px !important;
-}
 
 .form-control:focus{
-    border-color: #68360c !important;
-    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(255, 144, 0, 0.6) !important;
+    border-color: #e40404 !important;
+    box-shadow: 0 1px 1px #fc7c7c inset, 0 0 8px #960202 !important;
     outline: 0 none !important;
 }
 
+/* PALETA COLORES #e40404, #fc7c7c, #820202, #960202 */
+/* COLOR PRINCIPAL #e80404 */
+
 .btn {
-    border-color:#cc8d5a !important;
-    background-color: #68360c !important;
-    color: #cc8d5a !important;
+    margin-top: 10px !important;
+    border-color:#D22426 !important;
+    background-color: #960202 !important;
+    color: white !important;
 }
 
 .btn:hover{
-    background-color: #cc8d5a !important;
-    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(255, 144, 0, 0.6) !important;
+    background-color: #800000 !important;
+    box-shadow: 0 1px 1px #800000 inset, 0 0 8px #D22426 !important;
     outline: 0 none !important;
-    color: #68360c !important;
-    border-color: #68360c !important;
+    color: white !important;
+    border-color: #fc7c7c !important;
     font-weight: bold !important;
 }
 
 .btn:focus{
-    border-color: #68360c !important;
-    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(255, 144, 0, 0.6) !important;
+    border-color: #fc7c7c !important;
+    box-shadow: 0 1px 1px #800000 inset, 0 0 8px #D22426 !important;
     outline: 0 none !important;
 } 
 
@@ -47,10 +47,10 @@ section.contentPanel {
 }
 
 article.welcome {
-    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(255, 144, 0, 0.6) !important;;
+    box-shadow: 0 1px 1px #960202 inset, 0 0 8px #D22426 !important;;
     width: 500px;
     text-align: center;
-    margin-top: 250px;
+    margin-top: 15%;
     background-color: aliceblue !important;
     border-radius: 50px;
 
@@ -81,7 +81,7 @@ div.iconPanel a img:hover {
 }
 
 td, th {
-    border: 2px solid #cc8d5a !important;
+    border: 2px solid #D22426 !important;
 }
 td, th{
     text-align: center !important;
@@ -90,7 +90,7 @@ td, th{
 
 table{
     margin-top: 10px !important;
-    border: 3px solid #cc8d5a;
+    border: 3px solid #D22426;
 }
 
 #form_container{
