@@ -2,270 +2,29 @@
     <section>
         <h2 class="pt-3 text-center">CONDUCTORES</h2>
         <div class="row">
-            <article class="col-xl-4 col-lg-4 mb-4">
-                    <div id="card1" class="card text-center bg-primary text-dark">
-                        <h1 class=" name text-white" style="font-family: 'Lment', Arial, sans-serif;">1</h1>
-                        <img src="../../../assets/image/Conductores/maxver01.avif" class="card-img-top" alt="Piloto"/>
-                        <div class="card-body">
-                            <h4 class="card-text text-white" style="font-family: 'Atpinko_Bold', Arial, sans-serif; float: left;">1</h4>
-                            <h4 class="card-text text-white" style="font-family: 'Atpinko_Bold', Arial, sans-serif; float: right; ">110 PTS</h4>
-                            <h4 class="card-text text-white" style="font-family: 'Atpinko', Arial, sans-serif; float: left; clear: both; " >Max Verstappen</h4>
-                            <img style="float: right;" src="../../../assets/image/banderasPilotos/Netherlands.avif" class="bandera" alt="bandera"/>
-                        </div>
-                    </div>
-            </article>
+            @for (conductor of conductores; track $index) {
             <article class="col-xl-4 col-lg-4 mb-4">
                 <div id="card1" class="card text-center bg-primary text-dark">
-                    <h1 class=" name text-white" style="font-family: 'Lment', Arial, sans-serif;">11</h1>
-                    <img src="../../../assets/image/Conductores/serper01.avif" class="card-img-top" alt="Piloto"/>
+                    <h1 class=" name text-white" style="font-family: 'Atpinko_Bold', Arial, sans-serif">{{$index+1}}
+                    </h1>
+                    <img src="../../../assets/image/Conductores/{{conductor.piloto}}.avif" class="card-img-top"
+                        alt="Piloto" />
                     <div class="card-body">
-                        <h4 class="card-text text-white" style="font-family: 'Atpinko_Bold', Arial, sans-serif; float: left;">2</h4>
-                        <h4 class="card-text text-white" style="font-family: 'Atpinko_Bold', Arial, sans-serif; float: right; ">85 PTS</h4>
-                        <h4 class="card-text text-white" style="font-family: 'Atpinko', Arial, sans-serif; float: left; clear: both; " >Sergio Perez</h4>
-                        <img style="float: right;" src="../../../assets/image/banderasPilotos/Mexico.avif" class="bandera" alt="bandera"/>
+                        <h2 class="card-text text-white" style="font-family: 'Lment', Arial, sans-serif; float: left;"> {{conductor.numero}}</h2>
+                        <h4 class="card-text text-white"
+                            style="font-family: 'Atpinko_Bold', Arial, sans-serif; float: right; ">{{conductor.puntos}}
+                        </h4>
+                        <h4 class="card-text text-white"
+                            style="font-family: 'Atpinko', Arial, sans-serif; float: left; clear: both; ">
+                            {{conductor.nombrePiloto}}
+                        </h4>
+                        <img style="float: right;"
+                            src="../../../assets/image/banderasPilotos/{{conductor.bandera}}.avif" class="bandera"
+                            alt="bandera" />
                     </div>
                 </div>
-        </article>
-        <article class="col-xl-4 col-lg-4 mb-4">
-            <div id="card1" class="card text-center bg-primary text-dark">
-                <h1 class=" name text-white" style="font-family: 'Lment', Arial, sans-serif;">16</h1>
-                <img src="../../../assets/image/Conductores/chalec01.avif" class="card-img-top" alt="Piloto"/>
-                <div class="card-body">
-                    <h4 class="card-text text-white" style="font-family: 'Atpinko_Bold', Arial, sans-serif; float: left;">3</h4>
-                    <h4 class="card-text text-white" style="font-family: 'Atpinko_Bold', Arial, sans-serif; float: right; ">76 PTS</h4>
-                    <h4 class="card-text text-white" style="font-family: 'Atpinko', Arial, sans-serif; float: left; clear: both;" >Charles Leclerc</h4>
-                    <img style="float: right;" src="../../../assets/image/banderasPilotos/Monaco.avif" class="bandera" alt="bandera"/>
-                </div>
-            </div>
-    </article>
-        </div>
-        <div class="row">
-            <article class="col-xl-4 col-lg-4 mb-4">
-                    <div id="card1" class="card text-center bg-primary text-dark">
-                        <h1 class=" name text-white" style="font-family: 'Lment', Arial, sans-serif;">55</h1>
-                        <img src="../../../assets/image/Conductores/carsai01.avif" class="card-img-top" alt="Piloto"/>
-                        <div class="card-body">
-                            <h4 class="card-text text-white" style="font-family: 'Atpinko_Bold', Arial, sans-serif; float: left;">4</h4>
-                            <h4 class="card-text text-white" style="font-family: 'Atpinko_Bold', Arial, sans-serif; float: right; ">69 PTS</h4>
-                            <h4 class="card-text text-white" style="font-family: 'Atpinko', Arial, sans-serif; float: left; clear: both; " >Carlos Sainz</h4>
-                            <img style="float: right;" src="../../../assets/image/banderasPilotos/Spain.avif" class="bandera" alt="bandera"/>
-                        </div>
-                    </div>
             </article>
-            <article class="col-xl-4 col-lg-4 mb-4">
-                <div id="card1" class="card text-center bg-primary text-dark">
-                    <h1 class=" name text-white" style="font-family: 'Lment', Arial, sans-serif;">4</h1>
-                    <img src="../../../assets/image/Conductores/lannor01.avif" class="card-img-top" alt="Piloto"/>
-                    <div class="card-body">
-                        <h4 class="card-text text-white" style="font-family: 'Atpinko_Bold', Arial, sans-serif; float: left;">5</h4>
-                        <h4 class="card-text text-white" style="font-family: 'Atpinko_Bold', Arial, sans-serif; float: right; ">58 PTS</h4>
-                        <h4 class="card-text text-white" style="font-family: 'Atpinko', Arial, sans-serif; float: left; clear: both; " >Lando Norris</h4>
-                        <img style="float: right;" src="../../../assets/image/banderasPilotos/United Kingdom.avif" class="bandera" alt="bandera"/>
-                    </div>
-                </div>
-        </article>
-        <article class="col-xl-4 col-lg-4 mb-4">
-            <div id="card1" class="card text-center bg-primary text-dark">
-                <h1 class=" name text-white" style="font-family: 'Lment', Arial, sans-serif;">81</h1>
-                <img src="../../../assets/image/Conductores/oscpia01.avif" class="card-img-top" alt="Piloto"/>
-                <div class="card-body">
-                    <h4 class="card-text text-white" style="font-family: 'Atpinko_Bold', Arial, sans-serif; float: left;">6</h4>
-                    <h4 class="card-text text-white" style="font-family: 'Atpinko_Bold', Arial, sans-serif; float: right; ">38 PTS</h4>
-                    <h4 class="card-text text-white" style="font-family: 'Atpinko', Arial, sans-serif; float: left; clear: both;" >Oscar Piastri</h4>
-                    <img style="float: right;" src="../../../assets/image/banderasPilotos/Australia.avif" class="bandera" alt="bandera"/>
-                </div>
-            </div>
-    </article>
-        </div>
-        <div class="row">
-            <article class="col-xl-4 col-lg-4 mb-4">
-                    <div id="card1" class="card text-center bg-primary text-dark">
-                        <h1 class=" name text-white" style="font-family: 'Lment', Arial, sans-serif;">63</h1>
-                        <img src="../../../assets/image/Conductores/georus01.avif" class="card-img-top" alt="Piloto"/>
-                        <div class="card-body">
-                            <h4 class="card-text text-white" style="font-family: 'Atpinko_Bold', Arial, sans-serif; float: left;">7</h4>
-                            <h4 class="card-text text-white" style="font-family: 'Atpinko_Bold', Arial, sans-serif; float: right; ">33 PTS</h4>
-                            <h4 class="card-text text-white" style="font-family: 'Atpinko', Arial, sans-serif; float: left; clear: both; " >George Russell</h4>
-                            <img style="float: right;" src="../../../assets/image/banderasPilotos/United Kingdom.avif" class="bandera" alt="bandera"/>
-                        </div>
-                    </div>
-            </article>
-            <article class="col-xl-4 col-lg-4 mb-4">
-                <div id="card1" class="card text-center bg-primary text-dark">
-                    <h1 class=" name text-white" style="font-family: 'Lment', Arial, sans-serif;">14</h1>
-                    <img src="../../../assets/image/Conductores/feralo01.avif" class="card-img-top" alt="Piloto"/>
-                    <div class="card-body">
-                        <h4 class="card-text text-white" style="font-family: 'Atpinko_Bold', Arial, sans-serif; float: left;">8</h4>
-                        <h4 class="card-text text-white" style="font-family: 'Atpinko_Bold', Arial, sans-serif; float: right; ">31 PTS</h4>
-                        <h4 class="card-text text-white" style="font-family: 'Atpinko', Arial, sans-serif; float: left; clear: both; " >Fernando Alonso</h4>
-                        <img style="float: right;" src="../../../assets/image/banderasPilotos/Spain.avif" class="bandera" alt="bandera"/>
-                    </div>
-                </div>
-        </article>
-        <article class="col-xl-4 col-lg-4 mb-4">
-            <div id="card1" class="card text-center bg-primary text-dark">
-                <h1 class=" name text-white" style="font-family: 'Lment', Arial, sans-serif;">44</h1>
-                <img src="../../../assets/image/Conductores/lewham01.avif" class="card-img-top" alt="Piloto"/>
-                <div class="card-body">
-                    <h4 class="card-text text-white" style="font-family: 'Atpinko_Bold', Arial, sans-serif; float: left;">9</h4>
-                    <h4 class="card-text text-white" style="font-family: 'Atpinko_Bold', Arial, sans-serif; float: right; ">19 PTS</h4>
-                    <h4 class="card-text text-white" style="font-family: 'Atpinko', Arial, sans-serif; float: left; clear: both;" >Lewis Hamilton</h4>
-                    <img style="float: right;" src="../../../assets/image/banderasPilotos/United Kingdom.avif" class="bandera" alt="bandera"/>
-                </div>
-            </div>
-    </article>
-        </div>
-        <div class="row">
-            <article class="col-xl-4 col-lg-4 mb-4">
-                    <div id="card1" class="card text-center bg-primary text-dark">
-                        <h1 class=" name text-white" style="font-family: 'Lment', Arial, sans-serif;">18</h1>
-                        <img src="../../../assets/image/Conductores/lanstr01.avif" class="card-img-top" alt="Piloto"/>
-                        <div class="card-body">
-                            <h4 class="card-text text-white" style="font-family: 'Atpinko_Bold', Arial, sans-serif; float: left;">10</h4>
-                            <h4 class="card-text text-white" style="font-family: 'Atpinko_Bold', Arial, sans-serif; float: right; ">9 PTS</h4>
-                            <h4 class="card-text text-white" style="font-family: 'Atpinko', Arial, sans-serif; float: left; clear: both; " >Lance Stroll</h4>
-                            <img style="float: right;" src="../../../assets/image/banderasPilotos/Canada.avif" class="bandera" alt="bandera"/>
-                        </div>
-                    </div>
-            </article>
-            <article class="col-xl-4 col-lg-4 mb-4">
-                <div id="card1" class="card text-center bg-primary text-dark">
-                    <h1 class=" name text-white" style="font-family: 'Lment', Arial, sans-serif;">22</h1>
-                    <img src="../../../assets/image/Conductores/yuktsu01.avif" class="card-img-top" alt="Piloto"/>
-                    <div class="card-body">
-                        <h4 class="card-text text-white" style="font-family: 'Atpinko_Bold', Arial, sans-serif; float: left;">11</h4>
-                        <h4 class="card-text text-white" style="font-family: 'Atpinko_Bold', Arial, sans-serif; float: right; ">7 PTS</h4>
-                        <h4 class="card-text text-white" style="font-family: 'Atpinko', Arial, sans-serif; float: left; clear: both; " >Yuki Tsunoda</h4>
-                        <img style="float: right;" src="../../../assets/image/banderasPilotos/Japan.avif" class="bandera" alt="bandera"/>
-                    </div>
-                </div>
-        </article>
-        <article class="col-xl-4 col-lg-4 mb-4">
-            <div id="card1" class="card text-center bg-primary text-dark">
-                <h1 class=" name text-white" style="font-family: 'Lment', Arial, sans-serif;">38</h1>
-                <img src="../../../assets/image/Conductores/olibea01.avif" class="card-img-top" alt="Piloto"/>
-                <div class="card-body">
-                    <h4 class="card-text text-white" style="font-family: 'Atpinko_Bold', Arial, sans-serif; float: left;">12</h4>
-                    <h4 class="card-text text-white" style="font-family: 'Atpinko_Bold', Arial, sans-serif; float: right; ">6 PTS</h4>
-                    <h4 class="card-text text-white" style="font-family: 'Atpinko', Arial, sans-serif; float: left; clear: both;" >Oliver Berman</h4>
-                    <img style="float: right;" src="../../../assets/image/banderasPilotos/United Kingdom.avif" class="bandera" alt="bandera"/>
-                </div>
-            </div>
-    </article>
-        </div>
-        <div class="row">
-            <article class="col-xl-4 col-lg-4 mb-4">
-                    <div id="card1" class="card text-center bg-primary text-dark">
-                        <h1 class=" name text-white" style="font-family: 'Lment', Arial, sans-serif;">27</h1>
-                        <img src="../../../assets/image/Conductores/nichul01.avif" class="card-img-top" alt="Piloto"/>
-                        <div class="card-body">
-                            <h4 class="card-text text-white" style="font-family: 'Atpinko_Bold', Arial, sans-serif; float: left;">13</h4>
-                            <h4 class="card-text text-white" style="font-family: 'Atpinko_Bold', Arial, sans-serif; float: right; ">4 PTS</h4>
-                            <h4 class="card-text text-white" style="font-family: 'Atpinko', Arial, sans-serif; float: left; clear: both; " >Nico Hulkenberg</h4>
-                            <img style="float: right;" src="../../../assets/image/banderasPilotos/Germany.avif" class="bandera" alt="bandera"/>
-                        </div>
-                    </div>
-            </article>
-            <article class="col-xl-4 col-lg-4 mb-4">
-                <div id="card1" class="card text-center bg-primary text-dark">
-                    <h1 class=" name text-white" style="font-family: 'Lment', Arial, sans-serif;">20</h1>
-                    <img src="../../../assets/image/Conductores/kevmag01.avif" class="card-img-top" alt="Piloto"/>
-                    <div class="card-body">
-                        <h4 class="card-text text-white" style="font-family: 'Atpinko_Bold', Arial, sans-serif; float: left;">14</h4>
-                        <h4 class="card-text text-white" style="font-family: 'Atpinko_Bold', Arial, sans-serif; float: right; ">1 PTS</h4>
-                        <h4 class="card-text text-white" style="font-family: 'Atpinko', Arial, sans-serif; float: left; clear: both; " >Kevin Magnussen</h4>
-                        <img style="float: right;" src="../../../assets/image/banderasPilotos/Denmark.avif" class="bandera" alt="bandera"/>
-                    </div>
-                </div>
-        </article>
-        <article class="col-xl-4 col-lg-4 mb-4">
-            <div id="card1" class="card text-center bg-primary text-dark">
-                <h1 class=" name text-white" style="font-family: 'Lment', Arial, sans-serif;">23</h1>
-                <img src="../../../assets/image/Conductores/alealb01.avif" class="card-img-top" alt="Piloto"/>
-                <div class="card-body">
-                    <h4 class="card-text text-white" style="font-family: 'Atpinko_Bold', Arial, sans-serif; float: left;">15</h4>
-                    <h4 class="card-text text-white" style="font-family: 'Atpinko_Bold', Arial, sans-serif; float: right; ">0 PTS</h4>
-                    <h4 class="card-text text-white" style="font-family: 'Atpinko', Arial, sans-serif; float: left; clear: both;" >Alexander Albon</h4>
-                    <img style="float: right;" src="../../../assets/image/banderasPilotos/Thailand.avif" class="bandera" alt="bandera"/>
-                </div>
-            </div>
-    </article>
-        </div>
-        <div class="row">
-            <article class="col-xl-4 col-lg-4 mb-4">
-                    <div id="card1" class="card text-center bg-primary text-dark">
-                        <h1 class=" name text-white" style="font-family: 'Lment', Arial, sans-serif;">31</h1>
-                        <img src="../../../assets/image/Conductores/estoco01.avif" class="card-img-top" alt="Piloto"/>
-                        <div class="card-body">
-                            <h4 class="card-text text-white" style="font-family: 'Atpinko_Bold', Arial, sans-serif; float: left;">16</h4>
-                            <h4 class="card-text text-white" style="font-family: 'Atpinko_Bold', Arial, sans-serif; float: right; ">0 PTS</h4>
-                            <h4 class="card-text text-white" style="font-family: 'Atpinko', Arial, sans-serif; float: left; clear: both; " >Esteban Ocon</h4>
-                            <img style="float: right;" src="../../../assets/image/banderasPilotos/France.avif" class="bandera" alt="bandera"/>
-                        </div>
-                    </div>
-            </article>
-            <article class="col-xl-4 col-lg-4 mb-4">
-                <div id="card1" class="card text-center bg-primary text-dark">
-                    <h1 class=" name text-white" style="font-family: 'Lment', Arial, sans-serif;">24</h1>
-                    <img src="../../../assets/image/Conductores/guazho01.avif" class="card-img-top" alt="Piloto"/>
-                    <div class="card-body">
-                        <h4 class="card-text text-white" style="font-family: 'Atpinko_Bold', Arial, sans-serif; float: left;">17</h4>
-                        <h4 class="card-text text-white" style="font-family: 'Atpinko_Bold', Arial, sans-serif; float: right; ">0 PTS</h4>
-                        <h4 class="card-text text-white" style="font-family: 'Atpinko', Arial, sans-serif; float: left; clear: both; " >Zhou Guanyu</h4>
-                        <img style="float: right;" src="../../../assets/image/banderasPilotos/China.avif" class="bandera" alt="bandera"/>
-                    </div>
-                </div>
-        </article>
-        <article class="col-xl-4 col-lg-4 mb-4">
-            <div id="card1" class="card text-center bg-primary text-dark">
-                <h1 class=" name text-white" style="font-family: 'Lment', Arial, sans-serif;">3</h1>
-                <img src="../../../assets/image/Conductores/danric01.avif" class="card-img-top" alt="Piloto"/>
-                <div class="card-body">
-                    <h4 class="card-text text-white" style="font-family: 'Atpinko_Bold', Arial, sans-serif; float: left;">18</h4>
-                    <h4 class="card-text text-white" style="font-family: 'Atpinko_Bold', Arial, sans-serif; float: right; ">0 PTS</h4>
-                    <h4 class="card-text text-white" style="font-family: 'Atpinko', Arial, sans-serif; float: left; clear: both;" >Daniel Ricciardo</h4>
-                    <img style="float: right;" src="../../../assets/image/banderasPilotos/Australia.avif" class="bandera" alt="bandera"/>
-                </div>
-            </div>
-    </article>
-        </div>
-        <div class="row">
-            <article class="col-xl-4 col-lg-4 mb-4">
-                    <div id="card1" class="card text-center bg-primary text-dark">
-                        <h1 class=" name text-white" style="font-family: 'Lment', Arial, sans-serif;">10</h1>
-                        <img src="../../../assets/image/Conductores/piegas01.avif" class="card-img-top" alt="Piloto"/>
-                        <div class="card-body">
-                            <h4 class="card-text text-white" style="font-family: 'Atpinko_Bold', Arial, sans-serif; float: left;">19</h4>
-                            <h4 class="card-text text-white" style="font-family: 'Atpinko_Bold', Arial, sans-serif; float: right; ">0 PTS</h4>
-                            <h4 class="card-text text-white" style="font-family: 'Atpinko', Arial, sans-serif; float: left; clear: both; " >Pierre Gasly</h4>
-                            <img style="float: right;" src="../../../assets/image/banderasPilotos/France.avif" class="bandera" alt="bandera"/>
-                        </div>
-                    </div>
-            </article>
-            <article class="col-xl-4 col-lg-4 mb-4">
-                <div id="card1" class="card text-center bg-primary text-dark">
-                    <h1 class=" name text-white" style="font-family: 'Lment', Arial, sans-serif;">77</h1>
-                    <img src="../../../assets/image/Conductores/valbot01.avif" class="card-img-top" alt="Piloto"/>
-                    <div class="card-body">
-                        <h4 class="card-text text-white" style="font-family: 'Atpinko_Bold', Arial, sans-serif; float: left;">20</h4>
-                        <h4 class="card-text text-white" style="font-family: 'Atpinko_Bold', Arial, sans-serif; float: right; ">0 PTS</h4>
-                        <h4 class="card-text text-white" style="font-family: 'Atpinko', Arial, sans-serif; float: left; clear: both; " >Valtteri Bottas</h4>
-                        <img style="float: right;" src="../../../assets/image/banderasPilotos/Finland.avif" class="bandera" alt="bandera"/>
-                    </div>
-                </div>
-        </article>
-        <article class="col-xl-4 col-lg-4 mb-4">
-            <div id="card1" class="card text-center bg-primary text-dark">
-                <h1 class=" name text-white" style="font-family: 'Lment', Arial, sans-serif;">2</h1>
-                <img src="../../../assets/image/Conductores/logsar01.avif" class="card-img-top" alt="Piloto"/>
-                <div class="card-body">
-                    <h4 class="card-text text-white" style="font-family: 'Atpinko_Bold', Arial, sans-serif; float: left;">21</h4>
-                    <h4 class="card-text text-white" style="font-family: 'Atpinko_Bold', Arial, sans-serif; float: right; ">0 PTS</h4>
-                    <h4 class="card-text text-white" style="font-family: 'Atpinko', Arial, sans-serif; float: left; clear: both;" >Logan Sargeant</h4>
-                    <img style="float: right;" src="../../../assets/image/banderasPilotos/United States.avif" class="bandera" alt="bandera"/>
-                </div>
-            </div>
-    </article>
+            }
         </div>
     </section>
 </div>
